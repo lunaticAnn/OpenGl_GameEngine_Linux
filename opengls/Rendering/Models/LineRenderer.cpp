@@ -42,10 +42,10 @@ void LineRenderer::Create(){
     line_dir = glm::vec3(line_dir.x, 0, line_dir.z);
     glm::vec3 w_dir = 0.5f * width * glm::cross(line_dir, front);
     glm::vec3 p1 = start + w_dir;
-    printf("p1:(%f, %f, %f)\n",p1.x, p1.y, p1.z);
     glm::vec3 p2 = start - w_dir;
-    glm::vec3 p3 = end + w_dir;
-    glm::vec3 p4 = end - w_dir; 
+    glm::vec3 p3 = end - w_dir;
+    glm::vec3 p4 = end + w_dir; 
+    
     
     vertices.push_back(VertexFormat(p1,start_color));
     vertices.push_back(VertexFormat(p2,start_color));
