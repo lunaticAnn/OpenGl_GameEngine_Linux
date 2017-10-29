@@ -4,14 +4,7 @@ using namespace Managers;
 using namespace Rendering;
 
 ModelsManager::ModelsManager(){	
-	Models::LineRenderer* line1 = new Models::LineRenderer(glm::vec3(-5.0, 0.0, 0.0), glm::vec3(5.0, 0.0, 0.0), 1.0);
-    Models::LineRenderer* line2 = new Models::LineRenderer(glm::vec3(0.0, 0.0, -5.0), glm::vec3(0.0, 0.0, 5.0), 1.0);
-	line1->SetProgram(ShaderManager::GetShader("colorShader"));
-	line1->Create();
-    line2->SetProgram(ShaderManager::GetShader("colorShader"));
-	line2->Create();
-	gameModelList["line1"] = line1;
-    gameModelList["line2"] = line2;
+	
 }
 
 ModelsManager::~ModelsManager(){

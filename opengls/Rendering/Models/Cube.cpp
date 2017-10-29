@@ -2,8 +2,6 @@
 using namespace Rendering;
 using namespace Models;
 
-#define PI 3.14159265
-
 Cube::Cube(const glm::vec3& t, const glm::vec3& s, const glm::vec3& r){
 	translation = t;
 	scale = s;
