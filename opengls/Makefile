@@ -6,7 +6,7 @@ INCLUDES = -I./Core -I./Core/Init -I./Dependencies/freeglut -I./Dependencies/gle
 LIBS = -lGL -lglut -lGLEW
 
 # source files
-SRCS = Core/Init/InitGLEW.cpp Core/Init/InitGLUT.cpp Managers/ShaderManager.cpp Managers/ModelsManager.cpp Managers/SceneManager.cpp Managers/SystemManager.cpp Rendering/Models/Model.cpp Rendering/Models/Camera.cpp Rendering/Models/Cube.cpp Rendering/Models/CustomModel.cpp Rendering/Systems/ParticleSystem.cpp Main.cpp  
+SRCS = Core/Init/InitGLEW.cpp Core/Init/InitGLUT.cpp Managers/ShaderManager.cpp Managers/ModelsManager.cpp Managers/SceneManager.cpp Managers/SystemManager.cpp Rendering/Models/Model.cpp Rendering/Models/Camera.cpp Rendering/Models/Cube.cpp Rendering/Models/LineRenderer.cpp Rendering/Models/CustomModel.cpp Rendering/Systems/ParticleSystem.cpp Main.cpp  
 
 OBJS = $(SRCS:.cpp=.o)
 

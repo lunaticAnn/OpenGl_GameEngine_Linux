@@ -2,8 +2,7 @@
 #include <map>
 #include "ShaderManager.h"
 #include "../Rendering/IGameObject.h"
-#include "../Rendering/Models/Triangle.h"
-#include "../Rendering/Models/Quad.h"
+#include "../Rendering/Models/LineRenderer.h"
 #include "../Rendering/Models/Cube.h"
 #include "../Rendering/Models/CustomModel.h"
 #include "../Rendering/Models/Camera.h"
@@ -16,7 +15,6 @@ namespace Managers
 	public:
 		ModelsManager();
 		~ModelsManager();
-
 		void Draw();
 		void Draw(const glm::mat4& projection_matrix,
 			const glm::mat4& view_matrix);
